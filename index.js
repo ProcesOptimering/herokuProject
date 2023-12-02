@@ -6,6 +6,7 @@ import { subscribe } from "diagnostics_channel";
 // SIMON
 // 324
 // Hejsa
+// endnu en ny kommentar
 
 const main = () => {
   const server = fastify();
