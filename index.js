@@ -6,6 +6,7 @@ import { subscribe } from "diagnostics_channel";
 // SIMON
 // 324
 // Hejsa
+// Ny kommentar
 // endnu en ny kommentar
 
 const main = () => {
