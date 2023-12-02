@@ -1,0 +1,6 @@
+{
+  "watch": ["*.js","src"],
+  "ext": ".js,.hbs,.css,.svg,.png,.ico",
+  "ignore": [],
+  "exec": "node index.js"
+}
