@@ -6,6 +6,7 @@ import { subscribe } from "diagnostics_channel";
 // SIMON
 // 324
 // Hejsa
+
 const main = () => {
   const server = fastify();
 
