@@ -1,3 +1,5 @@
+import env from "dotenv";
+env.config();
 import fastify from "fastify";
 import fs from "fs";
 import { users } from "./db/index.js";
@@ -9,6 +11,8 @@ import { subscribe } from "diagnostics_channel";
 // Ny kommentar
 // endnu en ny kommentar
 // den nyeste kommentar
+
+console.log(process.env.DB_PASSWORD);
 
 const main = () => {
   const server = fastify();
@@ -40,7 +44,7 @@ const main = () => {
     reply.send(profilePage);
   });
 
-  server.listen({ port: 3000, host: "0.0.0.0" }, (_, address) =>
+  server.listen({ port: process.env.PORT, host: "0.0.0.0" }, (_, address) =>
     console.log(`Listening on ${address}, error: ${_}`)
   );
 };
