@@ -8,6 +8,7 @@ import { subscribe } from "diagnostics_channel";
 // Hejsa
 // Ny kommentar
 // endnu en ny kommentar
+// den nyeste kommentar
 
 const main = () => {
   const server = fastify();
