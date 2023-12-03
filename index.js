@@ -3,7 +3,6 @@ env.config();
 import fastify from "fastify";
 import fs from "fs";
 import { users } from "./db/index.js";
-import { subscribe } from "diagnostics_channel";
 
 // SIMON
 // 324
@@ -12,10 +11,14 @@ import { subscribe } from "diagnostics_channel";
 // endnu en ny kommentar
 // den nyeste kommentar
 
-console.log(process.env.DB_PASSWORD);
-
 const main = () => {
   const server = fastify();
+
+  const goo = () => {
+    send("./profile.html");
+  };
+
+  goo();
 
   fs.readdirSync("./static").forEach((f) => {
     const fileKey = `${f}`.split(".")[0];
