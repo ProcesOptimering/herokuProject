@@ -14,12 +14,6 @@ import { users } from "./db/index.js";
 const main = () => {
   const server = fastify();
 
-  const goo = () => {
-    send("./profile.html");
-  };
-
-  goo();
-
   fs.readdirSync("./static").forEach((f) => {
     const fileKey = `${f}`.split(".")[0];
     const isIndex = fileKey === "index";
